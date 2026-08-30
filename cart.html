@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Enroll in a personalized online facade cleaning class – submit your details and we will contact you.">
+  <title>Enroll / Cart | FacadePro Academy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">FP</span>
+          FacadePro Academy
+        </a>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Classes</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="products.html" class="nav-cta">View Classes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Complete Your Enrollment Request</h2>
+        <p>You are requesting a personalized online class. Fill in your details below and we will contact you to tailor the program.</p>
+      </div>
+
+      <div class="cart-section">
+        <div id="selected-product" class="selected-product">
+          <!-- Filled by JS from URL param -->
+          <div>
+            <h3>Select a class from the Classes page</h3>
+            <p>If you arrived here directly, please go back and choose a class first.</p>
+            <a href="products.html" style="color:var(--primary);font-weight:600;">← Back to Classes</a>
+          </div>
+        </div>
+
+        <div class="form-note">
+          This form collects your contact information and preferences so our team can reach out and personalize your online class. No payment is processed on this page. By submitting, you agree to our <a href="privacy.html" style="color:var(--primary);">Privacy Policy</a>.
+        </div>
+
+        <div class="contact-form">
+          <form data-demo>
+            <input type="hidden" id="selected-class" name="selected_class" value="">
+
+            <div class="form-group">
+              <label for="full_name">Full Name *</label>
+              <input type="text" id="full_name" name="full_name" required placeholder="Your full name">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(555) 000-0000">
+            </div>
+
+            <div class="form-group">
+              <label for="experience">Your Experience Level</label>
+              <select id="experience" name="experience">
+                <option value="">Select one</option>
+                <option value="beginner">Beginner – little or no facade cleaning experience</option>
+                <option value="some">Some experience – residential or basic work</option>
+                <option value="intermediate">Intermediate – regular exterior cleaning</option>
+                <option value="advanced">Advanced / professional – commercial or high-rise</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="goals">Goals & Additional Details</label>
+              <textarea id="goals" name="goals" placeholder="Tell us about your goals, equipment you have, team size, or anything that helps us personalize the class..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex;align-items:flex-start;gap:0.5rem;font-weight:400;">
+                <input type="checkbox" name="consent" required style="width:auto;margin-top:4px;">
+                <span>I agree to be contacted regarding this class request and have read the Privacy Policy. *</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Enrollment Request</button>
+
+            <div class="success-msg">
+              <strong>Thank you!</strong><br>
+              We have received your details. Our team will review your information and contact you shortly to personalize your online class.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">FP</span>
+            FacadePro Academy
+          </a>
+          <p>Professional facade cleaning knowledge and personalized online training for individuals and teams.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Classes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Classes</h4>
+          <ul>
+            <li><a href="cart.html?class=basic">Basic Techniques</a></li>
+            <li><a href="cart.html?class=advanced">Advanced Methods</a></li>
+            <li><a href="cart.html?class=commercial">Commercial & Safety</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>789 Exterior Way, Suite 200</li>
+            <li>Clean City, CA 90210</li>
+            <li><a href="tel:+15559876543">(555) 987-6543</a></li>
+            <li><a href="mailto:info@facadeproacademy.com">info@facadeproacademy.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 FacadePro Academy. All rights reserved.</span>
+        <div>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
